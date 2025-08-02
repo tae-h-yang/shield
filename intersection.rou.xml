@@ -1,0 +1,42 @@
+<routes>
+    <!-- <vehicles> -->
+        <!-- Flow from north to south using the "ego" vehicle type -->
+        <!-- <flow id="ego" begin="0" end="1" from="1i" to="2o" number="1" type="ego"/> -->
+
+        <!-- Flow from south to north using the "vehicle" vehicle type -->
+        <!-- <flow id="f2" begin="0" end="1" from="2i" to="1o" number="0" type="vehicle"/> -->
+
+        <!-- Flow from east to west using the "vehicle" vehicle type -->
+        <!-- <flow id="f3" begin="0" end="1" from="3i" to="4o" number="0" type="vehicle"/> -->
+
+        <!-- Flow from west to east using the "vehicle" vehicle type -->
+        <!-- <flow id="f4" begin="0" end="1" from="4i" to="3o" number="1" type="vehicle"/> -->
+    <!-- </vehicles> -->
+    <vehicles>
+        <!-- Flow from south to north using the "vehicle" vehicle type -->
+        <!-- <flow id="f2" begin="0" from="2i" to="1o" probability="0.1" type="vehicle"/> -->
+        <flow id="f2_agg" begin="0" from="2i" to="1o" probability="0.05" type="aggressive"/>
+        <flow id="f2_pat" begin="0" from="2i" to="1o" probability="0.05" type="patient"/>
+
+        <!-- Flow from east to west using the "vehicle" vehicle type -->
+        <!-- <flow id="f3" begin="0" from="3i" to="4o" probability="0.1" type="vehicle"/> -->
+        <flow id="f3_agg" begin="0" from="3i" to="4o" probability="0.05" type="aggressive"/>
+        <flow id="f3_pat" begin="0" from="3i" to="4o" probability="0.05" type="patient"/>
+
+        <!-- Flow from west to east using the "vehicle" vehicle type -->
+        <!-- <flow id="f4" begin="0" from="4i" to="3o" probability="0.1" type="vehicle"/> -->
+        <flow id="f4_agg" begin="0" from="4i" to="3o" probability="0.05" type="aggressive"/>
+        <flow id="f4_pat" begin="0" from="4i" to="3o" probability="0.05" type="patient"/>
+
+        <!-- Flow from north to south using the "ego" vehicle type -->
+        <flow id="ego" begin="10" from="1i" to="2o" number="1" type="ego"/>
+        <!-- <route id="west_east" edges="1i 2o" /> -->
+        <!-- <vehicle id="ego" route="west_east" number="1" type="ego" depart="10"/> -->
+    </vehicles>
+
+    <!-- Explicit route definitions for vehicles -->
+    <!-- <route id="route1" edges="1i 2o"/>
+    <route id="route2" edges="2i 1o"/>
+    <route id="route3" edges="3i 4o"/>
+    <route id="route4" edges="4i 3o"/> -->
+</routes>

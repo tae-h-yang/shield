@@ -1,0 +1,17 @@
+<edges>
+  <!-- Two lanes from north to center -->
+  <edge id="1i" from="1" to="0" numLanes="1" speed="11.111"/>
+  <edge id="1o" from="0" to="1" numLanes="1" speed="11.111"/>
+  
+  <!-- Two lanes from south to center -->
+  <edge id="2i" from="2" to="0" numLanes="1" speed="11.111"/>
+  <edge id="2o" from="0" to="2" numLanes="1" speed="11.111"/>
+  
+  <!-- Two lanes from east to center -->
+  <edge id="3i" from="3" to="0" numLanes="1" speed="11.111"/>
+  <edge id="3o" from="0" to="3" numLanes="1" speed="11.111"/>
+  
+  <!-- Two lanes from west to center -->
+  <edge id="4i" from="4" to="0" numLanes="1" speed="11.111"/>
+  <edge id="4o" from="0" to="4" numLanes="1" speed="11.111"/>
+</edges>

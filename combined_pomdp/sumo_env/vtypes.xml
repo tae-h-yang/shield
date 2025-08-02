@@ -1,0 +1,9 @@
+<vTypes>
+    <!-- Ego vehicle (yellow rectangle) -->
+    <vType id="ego" color="1,1,0" shape="boxes" width="2.0" length="4.0" maxSpeed="11.111" />
+    
+    <!-- Other vehicles (red rectangle) -->
+    <!-- <vType id="vehicle" color="1,0,0" shape="boxes" width="2.0" length="4.0" maxSpeed="11.111" /> -->
+    <vType id="aggressive" color="1,0,0" shape="boxes" width="2.0" length="4.0" maxSpeed="11.111" impatience="1.0"/>
+    <vType id="patient" color="0,1,0" shape="boxes" width="2.0" length="4.0" maxSpeed="11.111" impatience="off"/>
+</vTypes>

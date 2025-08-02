@@ -1,0 +1,18 @@
+<configuration>
+  <input>
+    <net-file value="intersection.net.xml"/>
+    <route-files value="intersection.rou.xml"/>
+    <additional-files value="intersection.add.xml, vtypes.xml"/>  <!-- Add the vehicle types file here -->
+  </input>
+  
+  <time>
+    <begin value="0"/>
+    <step-length value="0.1"/>
+    <end value="3600"/>  <!-- End time in seconds, simulation runs for 1 hour -->
+  </time>
+  
+  <output>
+    <summary value="summary.xml"/>  <!-- Optional, summary output -->
+    <tripinfo-output value="tripinfo.xml"/>  <!-- Optional, detailed trip info -->
+  </output>
+</configuration>

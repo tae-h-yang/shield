@@ -1,0 +1,10 @@
+<nodes>
+  <!-- The central intersection node -->
+  <node id="0" x="0.0" y="0.0" type="priority"/>
+  
+  <!-- Nodes representing entry points -->
+  <node id="1" x="-50.0" y="0.0" type="priority"/>
+  <node id="2" x="50.0" y="0.0" type="priority"/>
+  <node id="3" x="0.0" y="-50.0" type="priority"/>
+  <node id="4" x="0.0" y="50.0" type="priority"/>
+</nodes>

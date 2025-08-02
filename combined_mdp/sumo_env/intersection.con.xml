@@ -1,0 +1,13 @@
+<connections>
+    <!-- Northbound to Southbound (straight through the intersection) -->
+    <connection from="1i" to="2o"/>
+
+    <!-- Southbound to Northbound (straight through the intersection) -->
+    <connection from="2i" to="1o"/>
+
+    <!-- Eastbound to Westbound (straight through the intersection) -->
+    <connection from="3i" to="4o"/>
+
+    <!-- Westbound to Eastbound (straight through the intersection) -->
+    <connection from="4i" to="3o"/>
+</connections>
