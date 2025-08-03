@@ -4,6 +4,13 @@
 
 This project tackles the challenge of an ego vehicle navigating an uncontrolled four-way intersection where other road users have latent driving styles. SHIELD explores solutions using both Markov Decision Processes (MDPs) and Partially Observable Markov Decision Processes (POMDPs) to enhance the safety and efficiency of autonomous vehicles in these complex scenarios.
 
+In the SUMO simulation environment, these latent driving styles are configured using an "impatience" parameter for each road user. This parameter is set to `1.0` for aggressive drivers and `off` (or 0) for patient drivers. This key parameter governs their behavior:
+
+* **Aggressive (Impatient) Vehicles**: These drivers accelerate more aggressively and make more rapid decisions at the intersection.
+* **Patient (Cautious) Vehicles**: These drivers behave more conservatively, with slower acceleration and more cautious decision-making.
+
+This behavioral difference introduces dynamic uncertainty, requiring the ego vehicle to adapt its strategy based on the inferred driving styles of surrounding vehicles.
+
 ## Installation
 
 To run this project, you will need to install the SUMO (Simulation of Urban Mobility) software suite.
